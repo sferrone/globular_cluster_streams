@@ -1,0 +1,14 @@
+
+(1) Cluster identification
+(2) Heliocentric radial velocity (km/s)
+(3) Observational (internal) uncertainty in radial velocity
+(4) Radial velocity relative to Solar neighborhood LSR
+(5) Central velocity dispersion sig_v (km/s)
+(6) Observational (internal) uncertainty in velocity dispersion
+(7) King-model central concentration, c = log(r_t/r_c); a 'c' denotes a core-collapsed cluster
+(8) Core radius in arcmin
+(9) Half-light radius in arcmin
+(10) Central surface brightness, V magnitudes per square arcsecond
+(11) Central luminosity density, log_10(Solar luminosities per cubic parsec)
+(12) Core relaxation time t(r_c), in log_10(years)
+(13) Median relaxation time t(r_h), in log_10(years)

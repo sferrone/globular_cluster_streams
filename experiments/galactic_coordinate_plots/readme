@@ -1,0 +1,30 @@
+the code file (C0) grabs data from (I0). This code creates colorplots in the galactic latitude and longitude. The colors are quantities such as the heliocentric distance, and galactic z angular momentum. The user must specify which galatic model to use, for example PII< in the code. The code will then search in the /galacticmodel/steams/ folder and grab each h5 data. It will plot the desired quantity for each star in the steams folder from each h5 file. 
+
+(C1) does the same but in galactic centric coordaintes 
+
+inputs 
+(I0) - ../simulations/outputDATA/*galacticmodel*/*globular_potential*/steams/
+
+outputs
+a series of png images named
+(0) galactic_latitude_longitude_quantity_**NAME_OF_QUANTITY**_nClusters_*NUMBER OF CLUSTERS*.png
+
+(1) galactic_coordinate_colorplot_quantity_**NAME_OF_QUANTITY**_nClusters_*NUMBER OF CLUSTERS*.png
+
+code
+(C0) - galactic_latitude_longitude_color_plot
+(C1) - galactic_coordinate_color_plot
+
+
+NOTES THAT INSPIREED THIS EXPERIMENT
+
+The experiment in this folder is to create the same plots as Ibata 2020.
+Ibata 2020 created color plots with galatic latitude and longitude. 
+The colorplots parameters of the color plots are heliocentric distance, line of sight velocity, temperature
+We will do heliocentric distance and angular momentum 
+
+# SCRAP 
+(1) Ibata 2020 - figure 1. Dobbiamo farla in relationze dal sole quindi dobbiamo cmabiarE GLI UNITE 
+^ per vedere dove sono tutti 
+(2) Lz=x*vy-y*vx nello stesso modo 
+(3) scrivere un programma che puo fare questo plot per ogni h5 file quelli che abbiamo 

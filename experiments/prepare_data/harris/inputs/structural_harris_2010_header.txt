@@ -1,0 +1,14 @@
+TAG;Description;units
+ID;Cluster identification;text
+v_r;Heliocentric radial velocity;km/s
+v_r_err;Observational internal uncertainty in radial velocity;km/s
+v_LSR;Radial velocity relative to Solar neighborhood LSR;km/s
+sig_v;Central velocity dispersion sig_v;km/s
+sig_v_err;Observational internal uncertainty in velocity dispersion;km/s
+c;King-model central concentration, c = log(r_t/r_c) a 'c' denotes a core-collapsed cluster;unitless
+r_c;Core radius in arcmin;arcmin
+r_h_l;Half-light radius in arcmin;arcmin
+mu_V;Central surface brightness, V magnitudes per square arcsecond;mag/arcsec/arcsec
+rho_0;Central luminosity density, log_10(Solar luminosities per cubic parsec);L/parsec/parsec/parsec
+lg_tc;Core relaxation time t(r_c), in log_10(years);log10(years)
+lg_th;Median relaxation time t(r_h), in log_10(years);log10(years)

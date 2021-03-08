@@ -1,0 +1,12 @@
+
+
+
+NOTES
+
+We want to make histograms for each cluster so we can see its variation and such. 
+Make the output structure follow this hirerarchy
+Galactic potential
+Cluster potential
+Cluster 
+The program will need to check if the data file exists
+The program will need to create a corresponding output directory if it doesn't exist

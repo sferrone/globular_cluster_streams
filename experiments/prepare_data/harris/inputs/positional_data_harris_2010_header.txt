@@ -1,0 +1,11 @@
+TAG;Description;units
+ID;Cluster identification number;text
+RA;Right ascension epoch J2000;HR MN ss
+DEC;declination epoch J2000;Deg Arcmin ArcSec
+L;Galactic longitude;degrees 
+B;Galactic latitude;degrees
+R_SUN;Distance from Sun;kiloparsec
+R_GC;Distance from Galactic center;kiloparsec
+X;component Galatic distance;kiloparsec
+Y;component Galatic distance;kiloparsec 
+Z;component Galatic distance;kiloparsec
