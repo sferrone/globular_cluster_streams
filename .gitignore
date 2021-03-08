@@ -1,0 +1,6 @@
+papers/
+outputs/
+reports/
+*.png
+notes/
+*.ipynb
