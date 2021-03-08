@@ -4,3 +4,7 @@ reports/
 *.png
 notes/
 *.ipynb
+.DS_Store*
+.DS_Store
+.vccode/
+experiments/.DS_Store

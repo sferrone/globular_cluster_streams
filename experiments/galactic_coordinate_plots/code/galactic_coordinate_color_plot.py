@@ -1,18 +1,29 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+from astropy.stats import sigma_clip
 import h5py
+
 # import astropy.coordinates as coord
 import os 
 import re
 
 # USER can changes this information 
 
-quantity_name = 'D'                         # data quantity to plot 
+quantity_name = 'Lz'                         # data quantity to plot 
 galactic_potential = "PII"                  # galactic potential model 
 globular_potential = "Plummer"              # globular cluster potential
 dot_size = 0.2                              # size of dot for scatter plot 
-quantity_coordinate_system = 'equatorial'   # units from h5 data table
-
+quantity_coordinate_system = 'galactocentric'   # units from h5 data table
+'''
+equatorial
+['D', 'DEC', 'PMDEC', 'PMRA_COSDEC', 'RA']
+galactic
+['LAT', 'LONG', 'PMB', 'PML_COSB']
+galactocentric
+['VX', 'VY', 'VZ', 'X', 'Y', 'Z']
+^ Also Lz
+'''
 # initialize quantities 
 simulation_path = "../../simulations/outputDATA/"+galactic_potential+"/"+globular_potential+"/streams/"
 outpath = "../outputs/"
@@ -57,17 +68,23 @@ else:
 # begin plot 
 fig, ax = plt.subplots(1,1)
 my_fontsize=20
-fig.set_figheight(5)
-fig.set_figwidth(11)
+fig.set_figheight(7)
+fig.set_figwidth(7)
 ax.grid(True)
 # plot the data 
 im = ax.scatter(x_coordinate, y_coordinate, c=quantity, s=dot_size)
-cbar = fig.colorbar(im, ax=ax)
+# make colorbar fit axes and also 
+divider = make_axes_locatable(ax)
+cax1 = divider.append_axes("right", size="5%", pad=0.05)
+cbar = fig.colorbar(im, cax=cax1)
 cbar.ax.set_ylabel(cbar_name, rotation=270, size=.75*my_fontsize)
 cbar.ax.get_yaxis().labelpad = 20
-ax.set_xlim(-180, 180)
-ax.set_ylim(-90,90)
 ax.set_aspect('equal')
+# do sig_clip for colorbar
+
+
+ax.set_xlim(-75, 75)
+ax.set_ylim(-75,75)
 ax.set_title("Galacto-centric coordinates")
 ax.set_xlabel("X (kpc)", size=my_fontsize)
 ax.set_ylabel("Y (kpc)",size=my_fontsize)
