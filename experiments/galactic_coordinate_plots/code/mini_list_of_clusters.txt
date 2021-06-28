@@ -1,0 +1,4 @@
+NGC6528	1
+Eridanus	5
+Pal5	5
+NGC3201	5

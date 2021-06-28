@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH -J GCsTT0
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --threads-per-core=1
+#SBATCH --mem=110GB
+#SBATCH --time=24:00:00
+#SBATCH --output GCsTT.output
+#SBATCH --constraint=HSW24
+
+
+export OMP_NUM_THREADS=1
+export KMP_AFFINITY=compact,1,0
+export ulimit -s unlimited
+export KMP_STACKSIZE=60000m
+
+
+module purge
+module load intel/17.2
+module load python/3.6.3
+
+srun python3 TPBody.py
+
+

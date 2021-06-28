@@ -19,7 +19,7 @@ gc_frame=inputMW.ref_frame()
 """                    
 ASSIGN GLOBULAR CLUSTER AND GET ITS GALACTOCENTRIC POSITIONS AND VELOCITIES
 """
-GCname='Pal12'
+GCname='NGC6528'
 
 """
 SET MONTE CARLO PARAMETERS
@@ -95,7 +95,9 @@ for number in range(0,n_trials):
     print(xGCini,yGCini,zGCini)
     print(vxGCini,vyGCini,vzGCini)
 
-
+    # Sleep to pause program to not calculate the forward orbit
+    # t0 = 500000000
+    # time.sleep(t0)
     """                                                                                                        
     READ INITIAL CONDITIONS OF THE N-BODY GC
     """

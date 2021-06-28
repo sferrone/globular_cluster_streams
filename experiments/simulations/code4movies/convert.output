@@ -1,0 +1,28 @@
+/var/spool/slurmd/job11553915/slurm_script: line 15: export: `-s': not a valid identifier
+remove module python/3.6.3 (python)
+remove module mkl/compilers_and_libraries_2017.2.174/linux (Intel MKL)
+remove module idb/compilers_and_libraries_2017.2.174/linux (Intel Debugger)
+remove module intel/17.2 (Intel Compiler Suite)
+load module mkl/compilers_and_libraries_2017.2.174/linux (Intel MKL)
+load module idb/compilers_and_libraries_2017.2.174/linux (Intel Debugger)
+load module intel/17.2 (Intel Compiler Suite)
+[00;32mModule python/3.6.3 compiled with intel/17.2[0m
+load module python/3.6.3 (python)
+ N,Nstep,deltat
+           1       50000   1.0000000000000000E-003
+ omegabar:    0.0000000000000000     
+ N,Nstep,deltat
+      100000       50000   1.0000000000000000E-003
+ omegabar:    0.0000000000000000     
+Pal12
+=================
+SIMULATION WITHOUT ERRORS
+19.0 -3.249 -3.303 27.91
+current x,y,z,vx,vy,vz
+2.635113256352095 6.494129424210275 -14.057535184658871
+33.73256988440557 1.3074583770481734 11.352887613521357
+initial x,y,z,vx,vy,vz
+[40.2510639] [-10.30324848] [18.72982485]
+[3.73877952] [4.3998045] [-11.14019481]
+elapsed time 2794.2705125808716
+END

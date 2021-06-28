@@ -61,7 +61,7 @@ quantity = np.hstack(my_quantity)
 if quantity_name == "D":
     cbar_name = "Heliocentric distance (kpc)"
 elif quantity_name == "Lz":
-    cbar_name = "Z-angular momentum (kpc*kpc/year)"
+    cbar_name = "Z-angular momentum (kpc* 10 km/s)"
 else:
     cbar_name = quantity_name
 

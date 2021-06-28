@@ -141,7 +141,7 @@ contains
 
      IF(backward.EQ.'YES')&
           WRITE(50,*)time,SNGL(xnew),SNGL(ynew),SNGL(znew),SNGL(vxnew),SNGL(vynew),SNGL(vznew)
-
+   !! lines to write files
 
   ENDDO
 

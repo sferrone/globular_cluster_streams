@@ -1,0 +1,19 @@
+# These clusters have either posiitonal data from vasiliev or structural data from Baumgardt, but not both.
+IC1276
+FSR1758
+E1
+AM1
+BH184
+Lynga7
+UKS1
+BH176
+Pal7
+BH140
+Liller1
+Laevens3
+VVV-CL001
+2MASS-GC01
+2MASS-GC02
+BH229
+AM4
+HP1
